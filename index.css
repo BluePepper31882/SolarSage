@@ -1,0 +1,17 @@
+.mainbox{
+    margin: auto;
+    height: 60vh;
+    background-color: rgb(23, 50, 67);
+}
+
+.background{
+    z-index: -9999;
+    position: fixed;
+    width: 100vw;
+}
+
+
+
+
+
+
