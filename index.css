@@ -10,8 +10,45 @@
     width: 100vw;
 }
 
+.pic1{
+    width: 60vh;
 
+}
 
+.introText{
+    color: white;
+    float: right;
+    margin-top: 5vh;
+    margin-right: 15vh;
+    font-size: 2vh;
 
+}
 
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  .numbers {
+    animation: counter 3s forwards ease-in-out;
+    counter-reset: num var(--num);
+    font: 800 40px system-ui;
+    padding: 3vh;
+    color: white;
+    float: inherit;
+    
+  }
+  .numbers::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 14627;
+    }
+  }
 
