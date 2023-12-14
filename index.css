@@ -1,8 +1,14 @@
 .mainbox{
     margin: auto;
-    height: 60vh;
+    height: 89vh;
     width: 100%;
     background-color: rgb(23, 50, 67);
+}
+
+.smallBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .background{
@@ -12,32 +18,94 @@
 }
 
 .pic1{
-    width: 60vh;
+    width: 89vh;
 
 }
 
+.num1{
+    padding: 2vh;
+}
+
+.num2{
+    padding: 2vh;
+}
+.num3{
+    padding: 2vh;
+}
+
 .introText{
-    position: fixed;
     color: white;
     word-wrap: break-word;
-    margin-top: 5vh;
-    margin-right: 9vw;
-    margin-left: 9vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: 2vh;
     text-align: center;
-
+    padding: 5vh;
 }
 
 .numbers{
   color: white;
   text-align: center;
   font-size: 10vh;
-  position: absolute;
-  margin-left: 25vw;
-  margin-top: 30vh;
+  animation-name: risingOpaque;
+  animation-duration: 2s;
+  animation-direction: normal;
+  display: block;
+}
+
+.text{
+    text-align: center;
+    position: relative;
+    display: block;
+    color: white;
+}
+
+@keyframes risingOpaque {
 
 }
 
+.middlebox{
+    width: 100%;
+    height: 80vh;
+    background-color: lightgray;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 
+body{
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+  
+  
+body {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+  }
+
+.titletext{
+    font-size: 8vh;
+    padding: 2vh;
+    margin: 10vh;
+    color: white;
+    display: inline-block;
+    box-shadow: 10px 10px lightblue;
+    background-color: rgb(23, 50, 67);
+}
 

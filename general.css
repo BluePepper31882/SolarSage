@@ -101,6 +101,16 @@
         justify-content: center;
         align-items: center;
     }
+    .pic1{
+      opacity: 0;
+      position: absolute;
+    }
+
+    .smallbox{
+      flex-direction: column;
+      
+
+    }
     
     
     }
